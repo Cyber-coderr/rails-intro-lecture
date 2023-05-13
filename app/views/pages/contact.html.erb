@@ -1,0 +1,20 @@
+<h1>Contact</h1>
+
+<p>Let's stay in touch✌🏿</p>
+
+<p><span>💌</span>hello@mail.info</p>
+<form action="/contact">
+  <label for="member">Please type a name</label>
+  <input id="member" name="teammember" type="text" placeholder="Jane">
+  <input type="submit">
+</form>
+
+<ul>
+  <% @members.each do | member| %>
+      <li><%= member.capitalize %></li>
+  <% end %>
+</ul>
+
+<%# <a href="/home">Home</a> %>
+<%= link_to("🏡back to home", root_path) %>
+<%# link_to "what is should say", where /prefix rails routes it should go %>

@@ -1,0 +1,18 @@
+<h1>Home</h1>
+
+<p>You're finally home sweet home🏠🏡</p>
+
+<% 2+2 %>
+
+<% current_time = Time.now %>
+<p> <%= Date.today %> </p>
+<br>
+The time right now is <%= current_time %>
+<br><br>
+<%# <a href="/contact">Contact</a> %>
+<%= link_to("Stay in touch!", contact_path) %>
+<%# link_to "what is should say", where /prefix rails routes it should go %>
+
+<br>
+
+<%= link_to("About Grontapoe", about_path) %>
