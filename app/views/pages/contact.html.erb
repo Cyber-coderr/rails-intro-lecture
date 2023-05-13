@@ -3,11 +3,13 @@
 <p>Let's stay in touch✌🏿</p>
 
 <p><span>💌</span>hello@mail.info</p>
-<form action="/contact">
+<form action="/contact" method="get">
   <label for="member">Please type a name</label>
-  <input id="member" name="teammember" type="text" placeholder="Jane">
+  <input id="member" name="member" type="text" value="<%= params[:member] %>" placeholder="Jane">
   <input type="submit">
 </form>
+
+
 
 <ul>
   <% @members.each do | member| %>
